@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+      <ul class="navbar-nav ms-auto flex-row gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">pagina 1</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pagina2.html">pagina 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina3.html">pagina 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1 class="mb-4">Comandos básicos de Git</h1>
+
+    <p>Estos son los comandos que se usaron en el laboratorio para llevar los archivos de la computadora a GitHub. Se escriben en Git Bash dentro de la carpeta del repositorio.</p>
+
+    <div class="accordion mb-4" id="comandos">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">git clone</button>
+        </h2>
+        <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#comandos">
+          <div class="accordion-body">Descarga una copia completa de un repositorio de GitHub, con todo su historial.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">git add -A</button>
+        </h2>
+        <div id="c2" class="accordion-collapse collapse" data-bs-parent="#comandos">
+          <div class="accordion-body">Agrega todos los archivos nuevos y modificados al área de preparación.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">git commit -m "mensaje"</button>
+        </h2>
+        <div id="c3" class="accordion-collapse collapse" data-bs-parent="#comandos">
+          <div class="accordion-body">Guarda los cambios preparados como una nueva versión en el historial local.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-md-4"><img src="img1.jpg" class="img-fluid rounded" alt="Imagen 1"></div>
+      <div class="col-md-4"><img src="img2.jpg" class="img-fluid rounded" alt="Imagen 2"></div>
+      <div class="col-md-4"><img src="img3.jpg" class="img-fluid rounded" alt="Imagen 3"></div>
+    </div>
+
+    <p>El comando git status muestra qué archivos cambiaron, cuáles ya están preparados y cuáles todavía no se rastrean. Conviene usarlo antes y después de git add.</p>
+
+    <table class="table table-striped">
+      <thead><tr><th>Comando</th><th>Para qué sirve</th></tr></thead>
+      <tbody>
+        <tr><td>git status</td><td>Ver el estado del repositorio</td></tr>
+        <tr><td>git log</td><td>Ver el historial de commits</td></tr>
+        <tr><td>git push</td><td>Subir cambios a GitHub</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
